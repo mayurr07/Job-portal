@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family:"poppins";
+  font-weight: 500;
+  /* -webkit-overflow-scrolling: touch; */
+}
+/* Custom scrollbar styles */
+
+
+body::-webkit-scrollbar {
+  width: 5px; /* Scrollbar width */
+  height: 8px; /* Horizontal scrollbar height (for bottom scroll) */
+}
+
+body::-webkit-scrollbar-track {
+  background: #ff88001a; /* Light background for track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff3d0270; /* Scroll thumb color */
+  border-radius: 50px; /* Rounded edges for thumb */
+  border: 2px solid #ff88001a; /* Optional: border for thumb to add spacing */
+}
+
+/* Hover effect for scrollbar thumb */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ff8800; /* Darker color on hover */
+}
+
+/* Firefox scrollbar styling */
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #ff56226e #ff88001a;
+  scroll-behavior: smooth;
+}
+
+.custom:hover{
+  box-shadow: 0 10px 6px #ff880040;
+  color: #ff8800;
+  transition: 300ms ease;
+}
+.custom1:hover{
+  box-shadow: 0 10px 6px #ff880040;
+  color: #fff;
+  transition: 300ms ease;
+}
+li:hover, h3:hover{
+  color: #ff8800;
+  transition: ease-in 200ms;
+}
+
+li:last-child, h3:last-child {
+  margin-right: 0;
+}
+
+li:after, h3:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+li:hover:after, h3:hover:after {
+  width: 100%;
+  background: #ff8800;
+}
+
+/* sign up form css below */
+.custom-radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ff5722 !important; /* Custom orange border */
+  background-color: transparent;
+}
+
+.custom-radio:checked {
+  background-color: #ff5722 !important; /* Custom checked background */
+}
+
+.customimg{
+  border-radius: 30px;
+  box-shadow: rgba(213, 108, 9, 0.699) 0px 50px 100px -20px, rgba(178, 91, 29, 0.601) 0px 30px 60px -30px, rgba(192, 109, 8, 0.688) 0px -2px 6px 0px inset;
+
+}
+
+.customCar{
+  background: #ff880080;
+}
+
+.buttonCar{
+  background:#ff8800;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.buttonCar:hover{
+  background-color: #ff8800b1;
+  color: whitesmoke;
+  transition: 400ms ease-in;
+}
+
+.Arrowbut{
+  border-color: #ff5722;
+}
+
+.Arrowbut:hover{
+  color: white;
+  background-color: #00000088;
+}
+
+.bor-ra{
+  border-radius: 100px;
+}
+
+
+@media (max-width: 1024px) {
+  .carousel-items {
+    gap: 5px;
+    /* margin-right: 20px; */
+  }
+
+  .buttonCar {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-items {
+    gap: 3px;
+    margin: 5px;
+  }
+
+  .buttonCar {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    width: 100%;
+    border-radius: 120px;
+  }
+
+  .Arrowbut {
+    padding: 8px;
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .buttonCar {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+  .Arrowbut {
+    padding: 6px;
+  }
+}
+
+.custom-scroll {
+  -webkit-overflow-scrolling: touch; 
+  /* margin: 10px 0px; */
+}
+
+
+.custom-scroll::-webkit-scrollbar {
+  display: none; 
+}
+
+.custom-scroll {
+  -ms-overflow-style: none;  
+}   
+/* Custom scrollbar styles */
+.custom-avatar-border {
+  border: 4px solid #fb923c; /* Use orange-300 color */
+  border-radius: 50%; /* Ensure it's circular */
+  overflow: hidden;
+}
+
+.custom-avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Apply rounded edges */
+}
+
+
+
+
+
+
+
+/* @layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} */

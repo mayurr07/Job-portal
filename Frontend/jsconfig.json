@@ -1,0 +1,29 @@
+// {
+//   "compilerOptions": {
+//     "target": "esnext", 
+//     "module": "esnext", 
+//     "baseUrl": ".", 
+//     "paths": {
+//       "@/*": ["src/*"] 
+//     },
+//     "jsx": "react"
+//   },
+//   "include": ["src/**/*"], 
+//   "exclude": ["node_modules"]
+// }
+
+
+{
+  "compilerOptions": {
+    "target": "esnext", 
+    "module": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "@/*":[
+        "./src/*"
+      ],
+      "@components/*": ["components/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
