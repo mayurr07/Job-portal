@@ -1,5 +1,5 @@
 import { Popover, PopoverContent, PopoverTrigger } from '../popover';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../button';
 import { Avatar, AvatarImage } from '../avatar';
@@ -90,10 +90,7 @@ const Navbar = () => {
                                                     <Link to="/about"><li>About Us</li></Link>
                                                 </DropdownMenuItem>
                                                 <DropdownMenuItem>
-                                                    <Link to="/team"><li>Terms and condition</li></Link>
-                                                </DropdownMenuItem>
-                                                <DropdownMenuItem>
-                                                    <Link to="/privacyandpolicy"><li>Privacy & Policy</li></Link>
+                                                    <Link to="/TermsAndConditions"><li>Terms and condition</li></Link>
                                                 </DropdownMenuItem>
                                                 <DropdownMenuItem>
                                                     <Link to="/contact"><li>Contact-us</li></Link>
@@ -128,10 +125,7 @@ const Navbar = () => {
                                                     <Link to="/about"><li>About Us</li></Link>
                                                 </DropdownMenuItem>
                                                 <DropdownMenuItem>
-                                                    <Link to="/team"><li>Terms and condition</li></Link>
-                                                </DropdownMenuItem>
-                                                <DropdownMenuItem>
-                                                    <Link to="/careers"><li>Privacy & Policy</li></Link>
+                                                    <Link to="/TermsAndConditions"><li>Terms and condition</li></Link>
                                                 </DropdownMenuItem>
                                                 <DropdownMenuItem>
                                                     <Link to="/contact"><li>Contact-us</li></Link>
@@ -164,10 +158,7 @@ const Navbar = () => {
                                                     <Link to="/about"><li>About Us</li></Link>
                                                 </DropdownMenuItem>
                                                 <DropdownMenuItem>
-                                                    <Link to="/team"><li>Terms and condition</li></Link>
-                                                </DropdownMenuItem>
-                                                <DropdownMenuItem>
-                                                    <Link to="/careers"><li>Privacy & Policy</li></Link>
+                                                    <Link to="/TermsAndConditions"><li>Terms and condition</li></Link>
                                                 </DropdownMenuItem>
                                                 <DropdownMenuItem>
                                                     <Link to="/contact"><li>Contact-us</li></Link>
@@ -261,10 +252,7 @@ const Navbar = () => {
                                             <Link to="/about"><li>About Us</li></Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem>
-                                            <Link to="/team"><li>Terms and condition</li></Link>
-                                        </DropdownMenuItem>
-                                        <DropdownMenuItem>
-                                            <Link to="/careers"><li>Privacy & Policy</li></Link>
+                                            <Link to="/TermsAndConditions"><li>Terms and condition</li></Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem>
                                             <Link to="/careers"><li>Contact-us</li></Link>
@@ -297,10 +285,7 @@ const Navbar = () => {
                                             <Link to="/about"><li>About Us</li></Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem>
-                                            <Link to="/team"><li>Terms and condition</li></Link>
-                                        </DropdownMenuItem>
-                                        <DropdownMenuItem>
-                                            <Link to="/careers"><li>Privacy & Policy</li></Link>
+                                            <Link to="/TermsAndConditions"><li>Terms and condition</li></Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem>
                                             <Link to="/contact"><li>Contact-us</li></Link>
@@ -332,10 +317,7 @@ const Navbar = () => {
                                                 <Link to="/about"><li>About Us</li></Link>
                                             </DropdownMenuItem>
                                             <DropdownMenuItem>
-                                                <Link to="/team"><li>Terms and condition</li></Link>
-                                            </DropdownMenuItem>
-                                            <DropdownMenuItem>
-                                                <Link to="/careers"><li>Privacy & Policy</li></Link>
+                                                <Link to="/TermsAndConditions"><li>Terms and condition</li></Link>
                                             </DropdownMenuItem>
                                             <DropdownMenuItem>
                                                 <Link to="/contact"><li>Contact-us</li></Link>

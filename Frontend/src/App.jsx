@@ -16,6 +16,7 @@ import PostRecJob from './components/Recruiters/PostRecJob.jsx';
 import Applicants from './components/Recruiters/Applicants.jsx';
 import AboutUs from './components/Links/AboutUs.jsx';
 import ContactUs from './components/Links/ContactUs.jsx';
+import TermsAndConditions from './components/Links/TermsandConditions.jsx';
 
 
 
@@ -68,7 +69,7 @@ const ErrorPage = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          We're really sorry about that, It's not you its us.
+          We`re really sorry about that, It`s not you its us.
         </motion.p>
       </motion.div>
 
@@ -180,6 +181,11 @@ const appRouter = createBrowserRouter([
     element:<ContactUs/>,
     errorElement:<ErrorPage/>
 
+  },
+  {
+    path:"/TermsAndConditions",
+    element:<TermsAndConditions/>,
+    errorElement:<ErrorPage/>
   }
 ]);
 

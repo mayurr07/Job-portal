@@ -187,6 +187,58 @@ li:hover:after, h3:hover:after {
   border-radius: 50%; /* Apply rounded edges */
 }
 
+.step-card {
+  --offset: 3px;
+  background: rgb(255, 255, 255);  /* Set a background color */
+  border-radius: 20px;
+  position: relative;
+  height: 300px; /* Adjust card height */
+  width: 300px; /* Adjust card width */
+  overflow: hidden;
+}
+
+/* Rotating border using conic gradient */
+.step-card::before {
+  content: '';
+  background: conic-gradient(transparent 270deg, #ff8f45d7, transparent);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate 4s linear infinite;
+}
+
+/* Inner overlay that contains the content */
+.step-card::after {
+  content: '';
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+
+/* Animation for rotating the border */
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
+
+/* Customize the font and padding for the card content */
+.step-card h4, .step-card p, .step-card .step-id {
+  z-index: 10; 
+}
+
+
+
+
 
 
 

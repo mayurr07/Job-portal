@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Button } from '../ui/button';
 import { motion } from 'framer-motion';
 import Navbar from '../ui/shared/Navbar';
@@ -104,7 +104,7 @@ const AboutUs = () => {
                     <div className="mt-12 text-center">
                         <h4 className="text-xl font-semibold text-gray-900 mb-4">Join Us Today!</h4>
                         <p className="text-lg text-gray-700 mb-6">
-                            Whether you're looking for the perfect job or hiring talented professionals, Ujval Job Consultancy is your
+                            Whether you`re looking for the perfect job or hiring talented professionals, Ujval Job Consultancy is your
                             reliable partner. Let us help you take the next step in your career or business.
                         </p>
                         <Button className="bg-orange-500 text-white py-2 px-6 rounded-lg font-semibold hover:bg-orange-600">

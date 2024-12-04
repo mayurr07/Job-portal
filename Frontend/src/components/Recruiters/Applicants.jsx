@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+/* eslint-disable no-undef */
+// import React, { useEffect } from 'react'
 import Navbar from '../ui/shared/Navbar'
 import ApplicantsTable from './ApplicantsTable'
 import axios from 'axios';

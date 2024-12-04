@@ -1,10 +1,21 @@
 import { useNavigate } from 'react-router-dom';
-import React from 'react';
+// import React from 'react';
 import heroimg from '../components/images/homeimg1.jpeg';
 import { motion } from 'framer-motion';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const HeroSection = () => {
     const navigate = useNavigate();
+    useEffect(() => {
+        // Initialize AOS
+        AOS.init({
+          duration: 1000,  // Set animation duration (in milliseconds)
+          easing: 'ease-in-out',  // Set easing function for the animation
+          once: true,  // Makes the animation happen only once (default: false)
+        });
+      }, []);
 
     const headingVariants = {
         hidden: { opacity: 0, y: 50 },  // Initial state
@@ -86,10 +97,10 @@ const HeroSection = () => {
                                     </svg>
                                 </div>
 
-                                <div className="flex items-center">
-                                    <p className="text-3xl font-medium text-gray-900 sm:text-4xl font-pj">$1M+</p>
+                                {/* <div className="flex items-center">
+                                    <p className="text-3xl font-medium text-gray-900 sm:text-4xl font-pj"></p>
                                     <p className="ml-3 text-sm text-gray-900 font-pj">Transaction<br />Completed</p>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 

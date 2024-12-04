@@ -73,12 +73,12 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/recruiters" className="text-gray-400 hover:text-white transition-colors duration-300 ease-in-out">
+                                    <Link to="#" className="text-gray-400 hover:text-white transition-colors duration-300 ease-in-out">
                                         Recruiter Services
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/employers" className="text-gray-400 hover:text-white transition-colors duration-300 ease-in-out">
+                                    <Link to="#" className="text-gray-400 hover:text-white transition-colors duration-300 ease-in-out">
                                         Employer Dashboard
                                     </Link>
                                 </li>
@@ -118,7 +118,8 @@ const Footer = () => {
 
                     {/* Footer Bottom Section */}
                     <div className="mt-8 text-center text-gray-500 border-t border-gray-700 pt-4">
-                        <p>&copy; 2024 Ujjvall Job Consultancy. All rights reserved.</p>
+                        <p>&copy; 2024 Mumbai Ujval Job Consultancy. All rights reserved.</p>
+                        <p>Made with <span className="text-red-500">&hearts;</span> in India</p>
                     </div>
                 </div>
             </footer>

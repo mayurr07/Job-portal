@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { setAllJobs } from '@/redux/jobSlice';
 import { JOB_API_END_POINT } from '@/utils/constants';
 import axios from 'axios';
